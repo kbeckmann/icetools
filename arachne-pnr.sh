@@ -19,7 +19,7 @@ cd $DIR/arachne-pnr
 
 echo "Building arachne-pnr..."
 make clean
-make
+make -j8
 
 echo "Installing arachne-pnr..."
 if [[ "$UNAME_STR" == "Darwin" ]]; then

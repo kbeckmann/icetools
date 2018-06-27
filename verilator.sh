@@ -25,7 +25,7 @@ echo "Building verilator..."
 autoconf
 ./configure
 make clean
-make
+make -j8
 
 echo "Installing verilator..."
 if [[ "$UNAME_STR" == "Darwin" ]]; then

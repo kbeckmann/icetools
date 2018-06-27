@@ -21,7 +21,7 @@ echo "Building iverilog..."
 autoconf
 ./configure
 make clean
-make
+make -j8
 
 echo "Installing iverilog..."
 if [[ "$UNAME_STR" == "Darwin" ]]; then

@@ -25,7 +25,7 @@ if [[ "$UNAME_STR" == "Darwin" ]] && hash brew 2>/dev/null; then
 	PYTHONPATH=$(brew --prefix)/lib/python$PYTHONVERSION/site-packages/ make
 else
 	make clean
-	make
+	make -j8
 fi
 
 echo "Installing icestorm..."
